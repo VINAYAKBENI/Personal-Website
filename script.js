@@ -10,12 +10,8 @@ function openTab(tabname) {
   for (item of tabContents) {
     item.classList.remove("active-tab");
   }
-  // event.currentTarget.classList.add("active-link"); 
-  // event is depricated
-
-  function myEventHandler(e) {
-    e.currentTarget.classList.add("active-link");
-  } 
+  event.currentTarget.classList.add("active-link"); 
+ 
   document.getElementById(tabname).classList.add("active-tab");
 }
 
